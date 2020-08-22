@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA24F4B6-936A-4177-BDA5-B8798132AEAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StateManagment</RootNamespace>
+    <AssemblyName>StateManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01_ViewState\01_StateStorageProblem.aspx" />
+    <Content Include="01_ViewState\02_ViewStateUsing.aspx" />
+    <Content Include="01_ViewState\03_ViewStateUsing.aspx" />
+    <Content Include="01_ViewState\04_ViewStateSaveObject.aspx" />
+    <Content Include="02_URL\01_CatalogPage.aspx" />
+    <Content Include="02_URL\02_DescriptionPage.aspx" />
+    <Content Include="03_Cookies\02_CookieRead.aspx" />
+    <Content Include="03_Cookies\01_CookieWrite.aspx" />
+    <Content Include="03_Cookies\03_CookieWrite.aspx" />
+    <Content Include="03_Cookies\04_CookieRead.aspx" />
+    <Content Include="04_Session\02_SessionRead.aspx" />
+    <Content Include="04_Session\01_SessionWrite.aspx" />
+    <Content Include="05_Application\01_ApplicationUsing.aspx" />
+    <Content Include="05_Application\02_ApplicationLock.aspx" />
+    <Content Include="06_AuthenticationSample\Closed.aspx" />
+    <Content Include="06_AuthenticationSample\Default.aspx" />
+    <Content Include="06_AuthenticationSample\Logout.aspx" />
+    <Content Include="06_AuthenticationSample\Login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01_ViewState\01_StateStorageProblem.aspx.cs">
+      <DependentUpon>01_StateStorageProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="01_ViewState\01_StateStorageProblem.aspx.designer.cs">
+      <DependentUpon>01_StateStorageProblem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="01_ViewState\02_ViewStateUsing.aspx.cs">
+      <DependentUpon>02_ViewStateUsing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="01_ViewState\02_ViewStateUsing.aspx.designer.cs">
+      <DependentUpon>02_ViewStateUsing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="01_ViewState\03_ViewStateUsing.aspx.cs">
+      <DependentUpon>03_ViewStateUsing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="01_ViewState\03_ViewStateUsing.aspx.designer.cs">
+      <DependentUpon>03_ViewStateUsing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="01_ViewState\04_ViewStateSaveObject.aspx.cs">
+      <DependentUpon>04_ViewStateSaveObject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="01_ViewState\04_ViewStateSaveObject.aspx.designer.cs">
+      <DependentUpon>04_ViewStateSaveObject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="01_ViewState\Customer.cs" />
+    <Compile Include="02_URL\01_CatalogPage.aspx.cs">
+      <DependentUpon>01_CatalogPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_URL\01_CatalogPage.aspx.designer.cs">
+      <DependentUpon>01_CatalogPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="02_URL\02_DescriptionPage.aspx.cs">
+      <DependentUpon>02_DescriptionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="02_URL\02_DescriptionPage.aspx.designer.cs">
+      <DependentUpon>02_DescriptionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Cookies\02_CookieRead.aspx.cs">
+      <DependentUpon>02_CookieRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Cookies\02_CookieRead.aspx.designer.cs">
+      <DependentUpon>02_CookieRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Cookies\01_CookieWrite.aspx.cs">
+      <DependentUpon>01_CookieWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Cookies\01_CookieWrite.aspx.designer.cs">
+      <DependentUpon>01_CookieWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Cookies\03_CookieWrite.aspx.cs">
+      <DependentUpon>03_CookieWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Cookies\03_CookieWrite.aspx.designer.cs">
+      <DependentUpon>03_CookieWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="03_Cookies\04_CookieRead.aspx.cs">
+      <DependentUpon>04_CookieRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="03_Cookies\04_CookieRead.aspx.designer.cs">
+      <DependentUpon>04_CookieRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Session\02_SessionRead.aspx.cs">
+      <DependentUpon>02_SessionRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Session\02_SessionRead.aspx.designer.cs">
+      <DependentUpon>02_SessionRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="04_Session\01_SessionWrite.aspx.cs">
+      <DependentUpon>01_SessionWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="04_Session\01_SessionWrite.aspx.designer.cs">
+      <DependentUpon>01_SessionWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_Application\01_ApplicationUsing.aspx.cs">
+      <DependentUpon>01_ApplicationUsing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_Application\01_ApplicationUsing.aspx.designer.cs">
+      <DependentUpon>01_ApplicationUsing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="05_Application\02_ApplicationLock.aspx.cs">
+      <DependentUpon>02_ApplicationLock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="05_Application\02_ApplicationLock.aspx.designer.cs">
+      <DependentUpon>02_ApplicationLock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Closed.aspx.cs">
+      <DependentUpon>Closed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Closed.aspx.designer.cs">
+      <DependentUpon>Closed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\CryptoProvider.cs" />
+    <Compile Include="06_AuthenticationSample\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="06_AuthenticationSample\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30049</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
